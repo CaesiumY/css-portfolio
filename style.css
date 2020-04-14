@@ -116,6 +116,7 @@ a {
 /* icons */
 
 .icons {
+  margin: 30px 0;
 }
 
 .icons a {
@@ -124,4 +125,18 @@ a {
   height: 30px;
   display: inline-block;
   text-indent: -999px;
+}
+
+.icons a.twitter {
+  background-position: left top;
+}
+.icons a.facebook {
+  background-position: center top;
+}
+.icons a.pinterest {
+  background-position: right top;
+}
+
+.icons a:hover {
+  background-position-y: bottom;
 }
