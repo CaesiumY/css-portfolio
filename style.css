@@ -153,6 +153,7 @@ a {
 
 /* Sections */
 .profile-section h2 {
+  font-size: 1.5em;
   border-top: 3px solid;
   color: palevioletred;
   margin-bottom: 20px;
@@ -181,4 +182,40 @@ a {
   margin-top: 0.2em;
   margin-right: 0.5em;
   border-top: 2px solid;
+}
+
+.graph li {
+  background: rgb(177, 129, 213);
+  background: linear-gradient(
+    90deg,
+    rgba(177, 129, 213, 1) 0%,
+    rgba(121, 9, 107, 1) 0%,
+    rgba(63, 86, 255, 1) 100%
+  );
+  color: #dff;
+  padding: 0.5em 1em;
+  margin: 0.4em 0;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.graph li::before {
+  content: attr(data-score);
+  float: right;
+}
+
+.graph li[data-score="100%"] {
+  width: 100%;
+}
+.graph li[data-score="90%"] {
+  width: 90%;
+}
+.graph li[data-score="80%"] {
+  width: 80%;
+}
+.graph li[data-score="70%"] {
+  width: 70%;
+}
+.graph li[data-score="60%"] {
+  width: 60%;
 }
