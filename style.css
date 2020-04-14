@@ -1,5 +1,11 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR|Pacifico&display=swap&subset=korean");
+
+h2,
+h3,
+p {
+  font-family: "Noto Sans KR", sans-serif;
+}
 
 /* Animation */
 @keyframes rolling {
@@ -24,6 +30,8 @@
 
 body,
 h1,
+h2,
+h3,
 p,
 ul {
   margin: 0;
@@ -34,7 +42,9 @@ li {
   list-style-type: none;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-size: 100%;
   font-weight: normal;
 }
@@ -62,7 +72,7 @@ a {
 
 .profile-header,
 .profile-section {
-  padding-bottom: 7%;
+  padding-bottom: 14%;
 }
 
 /* profile header */
@@ -139,4 +149,36 @@ a {
 
 .icons a:hover {
   background-position-y: bottom;
+}
+
+/* Sections */
+.profile-section h2 {
+  border-top: 3px solid;
+  color: palevioletred;
+  margin-bottom: 20px;
+  padding: 0.5em 0;
+}
+
+.timeline {
+  font-size: 0.7rem;
+  color: #666;
+}
+
+.timeline li {
+  padding-bottom: 30px;
+}
+
+.timeline li:last-child {
+  padding-bottom: 0;
+}
+
+.timeline li h3 {
+  color: plum;
+  float: left;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  padding-top: 0.1em;
+  margin-top: 0.2em;
+  margin-right: 0.5em;
+  border-top: 2px solid;
 }
