@@ -69,7 +69,7 @@ a {
 }
 
 .profile {
-  padding: 7%;
+  padding: 5%;
 }
 
 .profile-header,
@@ -237,4 +237,35 @@ a {
 
 .list dd {
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .portrait {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 55vw;
+    height: 100vh;
+    padding: 0;
+  }
+
+  .profile {
+    margin-left: 55vw;
+  }
+
+  .timeline {
+    margin: 0 -10px;
+  }
+
+  .timeline li {
+    width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .timeline li:nth-child(even) {
+    margin-left: auto;
+    margin-top: -50px;
+    margin-bottom: -50px;
+  }
 }
