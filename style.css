@@ -74,7 +74,7 @@ a {
 
 .profile-header,
 .profile-section {
-  padding-bottom: 12%;
+  padding-bottom: 7%;
 }
 
 /* profile header */
@@ -85,11 +85,14 @@ a {
   font-style: italic;
   margin-bottom: 40px;
   font-family: "Pacifico", cursive;
+  position: sticky;
+  top: -2.4em;
+  background-color: #111;
+  box-shadow: 0 0 50px 10px #111;
 }
 
 .name-job {
   display: inline-block;
-  /* background-color: palevioletred; */
   color: white;
   vertical-align: top;
   height: 2.5em;
@@ -119,7 +122,7 @@ a {
 
 .name-title {
   font-size: 2em;
-  line-height: 0.8;
+  line-height: 1;
   color: deeppink;
   margin-left: -0.3em;
   position: relative;
@@ -160,6 +163,10 @@ a {
   color: palevioletred;
   margin-bottom: 20px;
   padding: 0.5em 0;
+  position: sticky;
+  top: 0;
+  background-color: #111;
+  box-shadow: 0 0 50px 10px #111;
 }
 
 .timeline {
